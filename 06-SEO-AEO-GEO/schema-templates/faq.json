@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How fast can you respond?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We prioritize active emergencies in the Portland metro. Call us to confirm current ETA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is cleanup covered by insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often yes. We document and coordinate with your adjuster when coverage applies."
+      }
+    }
+  ]
+}

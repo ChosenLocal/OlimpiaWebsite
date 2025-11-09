@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Crime Scene Cleanup",
+  "serviceType": "Biohazard cleanup",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Olimpia\u2019s Biohazard & Restoration"
+  },
+  "areaServed": "Portland Metro",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Homeowners, Property Managers, Law Enforcement"
+  }
+}

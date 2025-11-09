@@ -1,0 +1,58 @@
+openapi: 3.0.1
+info:
+  title: Olimpia’s Website API
+  version: 1.0.0
+paths:
+  /api/lead:
+    post:
+      summary: Capture lead form submission
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+                phone: { type: string }
+                email: { type: string }
+                zip: { type: string }
+                service: { type: string }
+                message: { type: string }
+      responses:
+        '200': { description: ok }
+  /api/callback:
+    post:
+      summary: Request instant callback (Twilio call bridge)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+                phone: { type: string }
+                zip: { type: string }
+                service: { type: string }
+      responses:
+        '200': { description: ok }
+  /api/twiml/bridge:
+    post:
+      summary: TwiML to dial on-call tech and bridge
+      responses:
+        '200': { description: XML TwiML }
+  /api/chat/triage:
+    post:
+      summary: Chat triage (LLM-guarded) to book a call
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message: { type: string }
+                sessionId: { type: string }
+      responses:
+        '200': { description: ok }

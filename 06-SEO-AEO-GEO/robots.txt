@@ -1,0 +1,6 @@
+# robots.txt (example)
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Allow: /
+Sitemap: https://www.olimpiasbiohazard.com/sitemap.xml

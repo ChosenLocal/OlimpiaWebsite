@@ -1,0 +1,24 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.olimpiasbiohazard.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://www.olimpiasbiohazard.com/services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Crime Scene Cleanup",
+      "item": "https://www.olimpiasbiohazard.com/services/crime-scene-cleanup"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+@import './tokens.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  * {
+    @apply border-charcoal;
+  }
+
+  html {
+    @apply antialiased;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-coal text-white font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  /* Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Focus styles for keyboard navigation */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-gold;
+  }
+
+  /* Link styles */
+  a {
+    @apply text-water hover:text-gold transition-colors;
+  }
+}
+
+@layer components {
+  /* Emergency CTA Button */
+  .btn-emergency {
+    @apply bg-fire text-white font-semibold px-6 py-3 rounded-md hover:bg-opacity-90 transition-all;
+    @apply focus:ring-2 focus:ring-fire focus:ring-offset-2 focus:ring-offset-coal;
+  }
+
+  /* Primary CTA Button */
+  .btn-primary {
+    @apply bg-gold text-coal font-semibold px-6 py-3 rounded-md hover:bg-opacity-90 transition-all;
+    @apply focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-coal;
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    @apply bg-charcoal text-white font-semibold px-6 py-3 rounded-md hover:bg-opacity-80 transition-all;
+    @apply border border-gold focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-coal;
+  }
+
+  /* Service Card */
+  .card {
+    @apply bg-charcoal rounded-lg p-6 hover:shadow-xl transition-all;
+    @apply border border-gold/20 hover:border-gold/40;
+  }
+}

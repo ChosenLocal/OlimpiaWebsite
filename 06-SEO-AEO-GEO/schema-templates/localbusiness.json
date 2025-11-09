@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "Organization",
+    "LocalBusiness",
+    "EmergencyService"
+  ],
+  "name": "Olimpia\u2019s Biohazard & Restoration",
+  "url": "https://www.olimpiasbiohazard.com",
+  "logo": "https://www.olimpiasbiohazard.com/static/logo.png",
+  "image": "https://www.olimpiasbiohazard.com/static/og.jpg",
+  "telephone": "+1-XXX-XXX-XXXX",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "TBD",
+    "addressLocality": "Milwaukie",
+    "addressRegion": "OR",
+    "postalCode": "TBD",
+    "addressCountry": "US"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-XXX-XXX-XXXX",
+      "contactType": "emergency",
+      "availableLanguage": [
+        "en",
+        "es"
+      ],
+      "areaServed": "Portland Metro"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "Milwaukie, OR"
+    },
+    {
+      "@type": "Place",
+      "name": "Portland, OR"
+    },
+    {
+      "@type": "Place",
+      "name": "Clackamas County, OR"
+    }
+  ]
+}
