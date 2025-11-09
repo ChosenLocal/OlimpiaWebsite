@@ -12,6 +12,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'cdn.sanity.io',
       },
+      {
+        protocol: 'https',
+        hostname: '1c7270e2.olimpias-ideogram-batch.pages.dev',
+      },
+      {
+        protocol: 'https',
+        hostname: 'olimpias-ideogram-batch.pages.dev',
+      },
     ],
   },
   // Security headers
