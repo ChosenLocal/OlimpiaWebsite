@@ -6,5 +6,6 @@ import faq from './faq'
 import guide from './guide'
 import testimonial from './testimonial'
 import settings from './settings'
+import lead from './lead'
 
-export const schemaTypes = [service, city, serviceCity, faq, guide, testimonial, settings]
+export const schemaTypes = [service, city, serviceCity, faq, guide, testimonial, settings, lead]

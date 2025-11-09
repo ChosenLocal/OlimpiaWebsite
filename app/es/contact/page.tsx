@@ -6,10 +6,10 @@ import { Container } from '@/components/ui/Container'
 import { ContactForm } from '@/components/forms/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact Us — 24/7 Emergency Response | Olimpia\'s Biohazard',
-  description: 'Contact Olimpia\'s Biohazard for emergency cleanup services. Available 24/7 throughout Portland Metro. Call (503) 555-1234.',
+  title: 'Contáctenos — Respuesta de Emergencia 24/7 | Olimpia&apos;s Biohazard',
+  description: 'Contacte a Olimpia&apos;s Biohazard para servicios de limpieza de emergencia. Disponible 24/7 en todo el Área Metropolitana de Portland. Llame al (503) 555-1234.',
   alternates: {
-    canonical: '/contact',
+    canonical: '/es/contact',
     languages: {
       'en': '/contact',
       'es': '/es/contact',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 const PHONE = '+15035551234'
 
-export default function ContactPage() {
+export default function ContactPageES() {
   return (
     <>
       <Header phone={PHONE} />
@@ -30,17 +30,17 @@ export default function ContactPage() {
           <Container>
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
-                Contact Us
+                Contáctenos
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                24/7 emergency response for biohazard cleanup and restoration services
+                Respuesta de emergencia 24/7 para servicios de limpieza de materiales peligrosos y restauración
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href={`tel:${PHONE}`} className="btn-emergency">
-                  Call Now: (503) 555-1234
+                <a href={`tel:${PHONE}`} className="inline-flex items-center justify-center px-8 py-4 bg-fire text-white font-heading font-semibold rounded-lg hover:bg-opacity-90 transition-colors">
+                  Llamar Ahora: (503) 555-1234
                 </a>
-                <a href={`mailto:info@olimpiasbiohazard.com`} className="btn-secondary">
-                  Email Us
+                <a href={`mailto:info@olimpiasbiohazard.com`} className="inline-flex items-center justify-center px-8 py-4 bg-gold text-coal font-heading font-semibold rounded-lg hover:bg-opacity-90 transition-colors">
+                  Envíenos un Correo
                 </a>
               </div>
             </div>
@@ -51,67 +51,67 @@ export default function ContactPage() {
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
-              <ContactForm locale="en" />
+              <ContactForm locale="es" />
 
               {/* Contact Information */}
               <div>
                 <h2 className="text-3xl font-heading font-bold text-white mb-6">
-                  Get In Touch
+                  Póngase en Contacto
                 </h2>
 
                 <div className="space-y-8">
                   {/* Emergency Contact */}
                   <div className="bg-charcoal border border-gold/20 rounded-lg p-6">
                     <h3 className="text-xl font-heading font-semibold text-gold mb-4">
-                      24/7 Emergency Line
+                      Línea de Emergencia 24/7
                     </h3>
                     <p className="text-gray-300 mb-4">
-                      For immediate emergency response, call our 24/7 hotline:
+                      Para respuesta de emergencia inmediata, llame a nuestra línea directa 24/7:
                     </p>
                     <a href={`tel:${PHONE}`} className="text-3xl font-bold text-white hover:text-gold transition-colors">
                       (503) 555-1234
                     </a>
                     <p className="text-sm text-gray-400 mt-4">
-                      Available 24 hours a day, 7 days a week, including holidays
+                      Disponible 24 horas al día, 7 días a la semana, incluidos los días festivos
                     </p>
                   </div>
 
                   {/* Email */}
                   <div className="bg-charcoal border border-gold/20 rounded-lg p-6">
                     <h3 className="text-xl font-heading font-semibold text-gold mb-4">
-                      Email
+                      Correo Electrónico
                     </h3>
                     <a href="mailto:info@olimpiasbiohazard.com" className="text-water hover:text-gold transition-colors">
                       info@olimpiasbiohazard.com
                     </a>
                     <p className="text-sm text-gray-400 mt-2">
-                      We respond to emails within 2 business hours
+                      Respondemos correos electrónicos dentro de 2 horas hábiles
                     </p>
                   </div>
 
                   {/* Address */}
                   <div className="bg-charcoal border border-gold/20 rounded-lg p-6">
                     <h3 className="text-xl font-heading font-semibold text-gold mb-4">
-                      Service Area
+                      Área de Servicio
                     </h3>
                     <p className="text-gray-300 mb-2">
-                      Based in Milwaukie, Oregon
+                      Con sede en Milwaukie, Oregon
                     </p>
                     <p className="text-gray-300">
-                      Serving all of Portland Metro Area
+                      Sirviendo toda el Área Metropolitana de Portland
                     </p>
                   </div>
 
                   {/* Hours */}
                   <div className="bg-charcoal border border-gold/20 rounded-lg p-6">
                     <h3 className="text-xl font-heading font-semibold text-gold mb-4">
-                      Hours
+                      Horario
                     </h3>
                     <p className="text-gray-300 text-lg font-semibold">
-                      24/7 Emergency Response
+                      Respuesta de Emergencia 24/7
                     </p>
                     <p className="text-sm text-gray-400 mt-2">
-                      Office hours: Monday-Friday, 8AM-5PM
+                      Horario de oficina: Lunes a Viernes, 8 AM - 5 PM
                     </p>
                   </div>
                 </div>
@@ -125,22 +125,22 @@ export default function ContactPage() {
           <Container size="md">
             <div className="text-center">
               <h2 className="text-2xl font-heading font-bold text-white mb-4">
-                Have Questions?
+                ¿Tiene Preguntas?
               </h2>
               <p className="text-gray-300 mb-6">
-                Check out our frequently asked questions for quick answers
+                Consulte nuestras preguntas frecuentes para respuestas rápidas
               </p>
-              <a href="/#faq" className="text-water hover:text-gold transition-colors">
-                View FAQ →
+              <a href="/es#faq" className="text-water hover:text-gold transition-colors">
+                Ver Preguntas Frecuentes →
               </a>
             </div>
           </Container>
         </section>
       </main>
 
-      <EmergencyCTA phone={PHONE} locale="en" position="fixed" />
+      <EmergencyCTA phone={PHONE} locale="es" position="fixed" />
 
-      <Footer locale="en" phone="(503) 555-1234" />
+      <Footer locale="es" phone="(503) 555-1234" />
     </>
   )
 }

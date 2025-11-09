@@ -17,6 +17,7 @@
     "sanity:import": "tsx sanity/import-seed-data.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
     "@portabletext/react": "^3.0.0",
     "@sanity/client": "^6.15.0",
     "@sanity/image-url": "^1.0.2",
