@@ -187,10 +187,25 @@ const faqSchema = {
   })),
 }
 
+const webSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Olimpia's Biohazard & Restoration",
+  url: "https://www.olimpiabiohazard.com/",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://www.olimpiabiohazard.com/search?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+}
+
 export default function HomePage() {
   return (
     <>
-      <StructuredData data={[localBusinessSchema, faqSchema]} />
+      <StructuredData data={[localBusinessSchema, faqSchema, webSiteSchema]} />
 
       <Header phone={PHONE} />
 
