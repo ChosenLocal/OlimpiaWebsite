@@ -119,7 +119,7 @@ export default function ServicesPage() {
                 </Button>
                 <Button
                   size="lg"
-                  variant="outline"
+                  variant="secondary"
                   className="border-gold text-gold hover:bg-gold/10 bg-transparent"
                   asChild
                 >
@@ -213,7 +213,7 @@ export default function ServicesPage() {
         <section className="py-16 bg-charcoal/50 border-y border-gold/20">
           <Container>
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-heading font-bold text-white mb-12">Why Choose Olimpia's</h2>
+              <h2 className="text-3xl font-heading font-bold text-white mb-12">Why Choose Olimpia&apos;s</h2>
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <div className="text-4xl font-bold text-gold mb-2">~60 min</div>
@@ -246,7 +246,7 @@ export default function ServicesPage() {
                 </Button>
                 <Button
                   size="lg"
-                  variant="outline"
+                  variant="secondary"
                   className="border-white text-white hover:bg-white/10 bg-transparent"
                   asChild
                 >

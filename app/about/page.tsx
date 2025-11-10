@@ -86,8 +86,8 @@ export default function AboutPage() {
                 we do it quietly, professionally, and with care that goes beyond a checklist.
               </p>
               <blockquote className="border-l-4 border-gold pl-6 py-4 italic text-xl text-gray-300 max-w-3xl mx-auto">
-                "Every scene is someone's story. Our job is to make it safe again—and to treat people with the respect
-                they deserve."
+                &quot;Every scene is someone&apos;s story. Our job is to make it safe again—and to treat people with the respect
+                they deserve.&quot;
                 <footer className="text-gold font-semibold mt-4 not-italic">— Olimpia Ursu, Founder</footer>
               </blockquote>
             </div>
@@ -244,7 +244,7 @@ export default function AboutPage() {
             </div>
 
             <p className="text-center text-gray-300 mt-8">
-              You'll always know what's happening, what it costs, and what comes next.
+              You&apos;ll always know what&apos;s happening, what it costs, and what comes next.
             </p>
           </Container>
         </section>
@@ -284,7 +284,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 p-6 flex flex-col justify-end">
                   <h3 className="text-xl font-heading font-bold text-white mb-3">Calm Under Pressure</h3>
                   <p className="text-gray-200 text-sm">
-                    Sensitive scenes require a steady hand; Olimpia's team brings exactly that.
+                    Sensitive scenes require a steady hand; Olimpia&apos;s team brings exactly that.
                   </p>
                 </div>
               </div>
@@ -331,7 +331,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-coal/95 via-coal/70 to-coal/50" />
                 <div className="absolute inset-0 p-6 flex flex-col justify-end">
                   <h3 className="text-xl font-heading font-bold text-white mb-3">Human-Centered</h3>
-                  <p className="text-gray-200 text-sm">We're here for the people as much as the property.</p>
+                  <p className="text-gray-200 text-sm">We&apos;re here for the people as much as the property.</p>
                 </div>
               </div>
             </div>
@@ -344,9 +344,9 @@ export default function AboutPage() {
               A Note From Olimpia
             </h2>
             <blockquote className="border-l-4 border-gold pl-6 py-4 text-lg text-gray-300 max-w-3xl mx-auto">
-              "I started this company to be present for people when it matters. I love this community and I believe in
-              treating every home and business like it's our own. Whether it's a difficult loss, a water emergency, or
-              fire damage, you'll never be just a job ticket to us."
+              &quot;I started this company to be present for people when it matters. I love this community and I believe in
+              treating every home and business like it&apos;s our own. Whether it&apos;s a difficult loss, a water emergency, or
+              fire damage, you&apos;ll never be just a job ticket to us.&quot;
             </blockquote>
           </Container>
         </section>
@@ -358,7 +358,7 @@ export default function AboutPage() {
               <p className="text-lg text-gray-300 max-w-4xl mx-auto">
                 We dispatch across Portland, OR and surrounding communities—Milwaukie, Gresham, Beaverton, Hillsboro,
                 Lake Oswego, Oregon City, West Linn, Clackamas—and into Southwest Washington including Vancouver, Camas,
-                and Washougal. If you're nearby and unsure, call; we'll confirm coverage and ETA.
+                and Washougal. If you&apos;re nearby and unsure, call; we&apos;ll confirm coverage and ETA.
               </p>
             </div>
 
@@ -416,7 +416,7 @@ export default function AboutPage() {
             <div className="bg-gradient-to-br from-charcoal to-coal border-2 border-gold rounded-lg p-8 md:p-12 text-center">
               <h2 className="text-3xl font-heading font-bold text-white mb-4">When You&apos;re Ready</h2>
               <p className="text-lg text-gray-300 mb-8">
-                If you're facing a difficult situation, you don't have to handle it alone. We'll answer your call 24/7,
+                If you&apos;re facing a difficult situation, you don&apos;t have to handle it alone. We&apos;ll answer your call 24/7,
                 explain your options, and move at your pace—with compassion and professionalism.
               </p>
               <div className="mb-6">

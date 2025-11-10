@@ -177,14 +177,14 @@ export default function WaterDamageRestorationPage() {
                   can warp or deteriorate. Fast response reduces repair costs and protects your property value.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                  We're available 24/7 across Portland-metro with rapid dispatch and all equipment on our trucks.
+                  We&apos;re available 24/7 across Portland-metro with rapid dispatch and all equipment on our trucks.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-3xl font-heading font-bold text-white mb-6">Insurance & documentation</h2>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Most water damage is covered under homeowner's or commercial property policies. We create
+                  Most water damage is covered under homeowner&apos;s or commercial property policies. We create
                   insurance-ready documentation with photos, moisture readings, and detailed scope of work.
                 </p>
                 <p className="text-gray-300 leading-relaxed">

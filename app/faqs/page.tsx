@@ -493,7 +493,7 @@ export default function FAQsPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl font-heading font-bold text-white mb-4">Still Have Questions?</h2>
               <p className="text-lg text-gray-300 mb-8">
-                We're here to help 24/7. Call us for immediate assistance or request a same-day assessment.
+                We&apos;re here to help 24/7. Call us for immediate assistance or request a same-day assessment.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

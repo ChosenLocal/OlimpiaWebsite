@@ -157,7 +157,7 @@ export default function HoarderCleanupPage() {
                 <p className="text-gray-300 leading-relaxed mb-4">
                   We understand hoarding is a sensitive matter. Our teams work discreetly with unmarked vehicles and
                   maintain strict confidentiality. We treat every situation with respect and work at a pace that honors
-                  the individual's needs.
+                  the individual&apos;s needs.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
                   When family members or social services are involved, we coordinate transparently and provide

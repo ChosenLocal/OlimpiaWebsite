@@ -232,12 +232,12 @@ export default function UnattendedDeathCleanupPage() {
         <section className="py-20 bg-gradient-to-b from-coal to-charcoal border-t border-gold/20">
           <Container>
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">We're Here to Help 24/7</h2>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">We&apos;re Here to Help 24/7</h2>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="emergency" size="lg" asChild>
                   <a href={`tel:${PHONE}`}>Call Now</a>
                 </Button>
-                <Button variant="outline" size="lg" asChild>
+                <Button variant="secondary" size="lg" asChild>
                   <a href="/contact">Request Assessment</a>
                 </Button>
               </div>

@@ -48,7 +48,7 @@ export default function SafetyCompliancePage() {
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Safety & Compliance</h1>
 
               <p className="text-xl text-gray-300 leading-relaxed mb-12">
-                Our teams operate under OSHA's Bloodborne Pathogens Standard (29 CFR 1910.1030) with documented
+                Our teams operate under OSHA&apos;s Bloodborne Pathogens Standard (29 CFR 1910.1030) with documented
                 exposure-control plans, universal precautions, and PPE. Infectious waste is handled and disposed of per
                 Oregon DEQ/OHA rules covering pathological, biological, cultures/stocks, and sharps. We work with
                 approved transport and treatment partners.

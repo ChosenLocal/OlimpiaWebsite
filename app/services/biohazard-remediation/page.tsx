@@ -146,7 +146,7 @@ export default function BiohazardRemediationPage() {
               <div className="mt-8 bg-charcoal border border-gold/20 rounded-lg p-6">
                 <p className="text-gray-300">
                   <strong className="text-white">OSHA Compliance:</strong> Our teams operate under documented
-                  exposure-control plans aligned with OSHA's Bloodborne Pathogens Standard.{" "}
+                  exposure-control plans aligned with OSHA&apos;s Bloodborne Pathogens Standard.{" "}
                   <Link href="/safety-compliance" className="text-gold hover:text-gold/80 underline">
                     Learn more about our safety protocols
                   </Link>
@@ -201,7 +201,7 @@ export default function BiohazardRemediationPage() {
                 <Button variant="emergency" size="lg" asChild>
                   <a href={`tel:${PHONE}`}>Call 24/7</a>
                 </Button>
-                <Button variant="outline" size="lg" asChild>
+                <Button variant="secondary" size="lg" asChild>
                   <a href="/contact">Request Assessment</a>
                 </Button>
               </div>

@@ -61,7 +61,7 @@ export function IntakeFormModal({ isOpen, onClose }: IntakeFormModalProps) {
         <div className="sticky top-0 bg-coal text-white p-6 flex justify-between items-center border-b-4 border-gold z-10">
           <div>
             <h2 className="text-2xl font-heading font-bold">Same-Day Assessment Request</h2>
-            <p className="text-gray-300 text-sm mt-1">We'll respond within 1 hour</p>
+            <p className="text-gray-300 text-sm mt-1">We&apos;ll respond within 1 hour</p>
           </div>
           <button onClick={onClose} className="text-white hover:text-gold transition-colors" aria-label="Close">
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -82,7 +82,7 @@ export function IntakeFormModal({ isOpen, onClose }: IntakeFormModalProps) {
               </svg>
             </div>
             <h3 className="text-2xl font-bold text-coal mb-2">Request Received!</h3>
-            <p className="text-gray-600">We'll contact you within the hour to schedule your assessment.</p>
+            <p className="text-gray-600">We&apos;ll contact you within the hour to schedule your assessment.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="p-6 space-y-4 overflow-y-auto max-h-[calc(100vh-12rem)]">
@@ -242,7 +242,7 @@ export function IntakeFormModal({ isOpen, onClose }: IntakeFormModalProps) {
             <div className="flex gap-4 pt-4">
               <Button
                 type="button"
-                variant="outline"
+                variant="secondary"
                 onClick={onClose}
                 className="flex-1 bg-transparent"
                 disabled={isSubmitting}

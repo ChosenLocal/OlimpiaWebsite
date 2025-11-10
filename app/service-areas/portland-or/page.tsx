@@ -85,7 +85,7 @@ export default function PortlandServiceAreaPage() {
               <div className="bg-charcoal border border-gold/20 rounded-lg p-8">
                 <h2 className="text-2xl font-heading font-bold text-white mb-4">Local coordination</h2>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  We're familiar with Portland's building codes, disposal requirements, and permit processes. When
+                  We&apos;re familiar with Portland&apos;s building codes, disposal requirements, and permit processes. When
                   needed, we coordinate with Portland Police non-emergency (503-823-3333) for incident documentation and
                   with Multnomah County crisis services (503-988-4888) for family support resources.
                 </p>

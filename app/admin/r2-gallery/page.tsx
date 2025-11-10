@@ -130,37 +130,37 @@ export default function R2GalleryPage() {
               <div className="mb-8">
                 <div className="flex flex-wrap gap-3">
                   <Button
-                    variant={activeCategory === "all" ? "primary" : "outline"}
+                    variant={activeCategory === "all" ? "primary" : "secondary"}
                     onClick={() => setActiveCategory("all")}
                   >
                     All ({images.length})
                   </Button>
                   <Button
-                    variant={activeCategory === "hero" ? "primary" : "outline"}
+                    variant={activeCategory === "hero" ? "primary" : "secondary"}
                     onClick={() => setActiveCategory("hero")}
                   >
                     Hero ({categorized.hero.length})
                   </Button>
                   <Button
-                    variant={activeCategory === "services" ? "primary" : "outline"}
+                    variant={activeCategory === "services" ? "primary" : "secondary"}
                     onClick={() => setActiveCategory("services")}
                   >
                     Services ({categorized.services.length})
                   </Button>
                   <Button
-                    variant={activeCategory === "team" ? "primary" : "outline"}
+                    variant={activeCategory === "team" ? "primary" : "secondary"}
                     onClick={() => setActiveCategory("team")}
                   >
                     Team ({categorized.team.length})
                   </Button>
                   <Button
-                    variant={activeCategory === "process" ? "primary" : "outline"}
+                    variant={activeCategory === "process" ? "primary" : "secondary"}
                     onClick={() => setActiveCategory("process")}
                   >
                     Process ({categorized.process.length})
                   </Button>
                   <Button
-                    variant={activeCategory === "general" ? "primary" : "outline"}
+                    variant={activeCategory === "general" ? "primary" : "secondary"}
                     onClick={() => setActiveCategory("general")}
                   >
                     General ({categorized.general.length})
