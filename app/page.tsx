@@ -202,10 +202,39 @@ const webSiteSchema = {
   },
 }
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Olimpia's Biohazard & Restoration LLC",
+  legalName: "Olimpia's Biohazard & Restoration LLC",
+  url: "https://www.olimpiabiohazard.com/",
+  logo: "https://www.olimpiabiohazard.com/logo.png",
+  telephone: "+1-971-895-4262",
+  email: "contact@olimpiabiohazard.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "13460 SE Rusk Rd",
+    addressLocality: "Milwaukie",
+    addressRegion: "OR",
+    postalCode: "97222",
+    addressCountry: "US",
+  },
+  areaServed: {
+    "@type": "GeoCircle",
+    geoMidpoint: {
+      "@type": "GeoCoordinates",
+      latitude: 45.4461,
+      longitude: -122.6158,
+    },
+    geoRadius: "50000",
+  },
+  description: "Professional biohazard cleanup, crime scene cleanup, and restoration services in Portland Metro. 24/7 emergency response with discreet, compassionate service.",
+}
+
 export default function HomePage() {
   return (
     <>
-      <StructuredData data={[localBusinessSchema, faqSchema, webSiteSchema]} />
+      <StructuredData data={[localBusinessSchema, faqSchema, webSiteSchema, organizationSchema]} />
 
       <Header phone={PHONE} />
 
