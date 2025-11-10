@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Poppins } from "next/font/google"
 import "./globals.css"
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -83,7 +84,10 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
       </head>
-      <body>{children}</body>
+      <body>
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   )
 }
