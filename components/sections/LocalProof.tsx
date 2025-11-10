@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Container } from "@/components/ui/Container"
 import { R2_IMAGES } from "@/lib/r2-images"
 
@@ -26,10 +27,12 @@ export function LocalProof({ locale = "en", averageResponseTime = 54 }: LocalPro
     <section className="py-16 bg-coal relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src={R2_IMAGES.hero.emergency || "/placeholder.svg"}
           alt="Emergency response vehicle"
-          className="w-full h-full object-cover opacity-10"
+          fill
+          sizes="100vw"
+          className="object-cover opacity-10"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-coal/90 via-coal/95 to-coal" />
       </div>

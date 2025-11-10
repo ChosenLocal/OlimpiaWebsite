@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 
 interface ServiceCardProps {
   service: {
@@ -19,21 +20,18 @@ export function ServiceCard({ service, locale }: ServiceCardProps) {
     <Link href={service.href}>
       <div className="h-full cursor-pointer bg-charcoal border border-gold/20 hover:border-gold/40 rounded-lg overflow-hidden transition-all group">
         <div className="relative h-48 overflow-hidden bg-coal/50">
-          <img
+          <Image
             src={service.image || "/placeholder.svg"}
             alt={service.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            onError={(e) => {
-              // Fallback if R2 image fails
-              e.currentTarget.src = "/biohazard-cleanup.jpg"
-            }}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/70 to-transparent" />
           <div className="absolute top-4 left-4 w-12 h-12 bg-gold/90 rounded-full flex items-center justify-center text-2xl shadow-lg">
             {service.icon}
           </div>
-        </div>
-        <div className="p-6">
+        </div>        <div className="p-6">
           <h4 className="text-lg font-semibold text-white group-hover:text-gold transition-colors mb-2">
             {service.title}
           </h4>

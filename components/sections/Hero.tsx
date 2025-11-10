@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Container } from "@/components/ui/Container"
 import { Button } from "@/components/ui/Button"
 import { cn } from "@/lib/utils"
@@ -26,14 +27,13 @@ export function Hero({ title, subtitle, phone, locale = "en", className, showCal
         className={cn("relative py-20 md:py-32 bg-gradient-to-b from-coal to-charcoal overflow-hidden", className)}
       >
         <div className="absolute inset-0 z-0">
-          <img
+          <Image
             src={R2_IMAGES.hero.main || "/placeholder.svg"}
             alt="Professional biohazard cleanup team"
-            className="w-full h-full object-cover opacity-30"
-            onError={(e) => {
-              // Fallback to placeholder if R2 image fails to load
-              e.currentTarget.src = "/biohazard-cleanup-team.jpg"
-            }}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-coal/80 via-coal/70 to-charcoal/90" />
         </div>

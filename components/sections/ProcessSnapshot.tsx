@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Container } from "@/components/ui/Container"
 import { R2_IMAGES } from "@/lib/r2-images"
 
@@ -40,10 +41,12 @@ export function ProcessSnapshot({ locale = "en" }: ProcessSnapshotProps) {
     <section className="py-16 bg-charcoal border-y border-gold/20 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src={R2_IMAGES.hero.technician || "/placeholder.svg"}
           alt="Professional cleanup technician"
-          className="w-full h-full object-cover opacity-10"
+          fill
+          sizes="100vw"
+          className="object-cover opacity-10"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/90 via-charcoal/95 to-charcoal" />
       </div>
