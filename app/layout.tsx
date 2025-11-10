@@ -17,7 +17,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://olimpiasbiohazard.com'),
+  metadataBase: new URL('https://www.olimpiabiohazard.com'),
   title: {
     default: "Olimpia's Biohazard & Restoration | 24/7 Emergency Cleanup Portland",
     template: "%s | Olimpia's Biohazard",
@@ -80,6 +80,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+      <head>
+        <meta charSet="UTF-8" />
+      </head>
       <body>{children}</body>
     </html>
   )
