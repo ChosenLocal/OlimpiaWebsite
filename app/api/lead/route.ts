@@ -19,8 +19,8 @@ const leadSchema = z.object({
 
 // Sanity client for storing leads
 const sanityClient = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '7phj7yjk',
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID?.trim() || '7phj7yjk',
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET?.trim() || 'production',
   token: process.env.SANITY_API_TOKEN,
   apiVersion: '2024-01-01',
   useCdn: false

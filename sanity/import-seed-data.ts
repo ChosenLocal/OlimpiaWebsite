@@ -9,8 +9,8 @@ import { createClient } from '@sanity/client'
 import { services, cities, faqs, testimonials, settings } from './seed-data'
 
 const client = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '7phj7yjk',
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID?.trim() || '7phj7yjk',
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET?.trim() || 'production',
   apiVersion: '2024-01-01',
   token: process.env.SANITY_API_TOKEN,
   useCdn: false,
