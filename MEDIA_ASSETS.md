@@ -25,7 +25,7 @@ The batch includes images generated via Ideogram for:
 ### Image Component
 Use Next.js Image component with Cloudflare URLs:
 
-```tsx
+\`\`\`tsx
 import Image from 'next/image'
 
 <Image
@@ -35,7 +35,7 @@ import Image from 'next/image'
   height={630}
   priority
 />
-```
+\`\`\`
 
 ### Configured Domains
 The following domains are whitelisted in `next.config.js`:
@@ -54,7 +54,7 @@ Next.js automatically serves optimized formats:
 ### Sizes
 Define responsive sizes for better performance:
 
-```tsx
+\`\`\`tsx
 <Image
   src="..."
   alt="..."
@@ -62,13 +62,13 @@ Define responsive sizes for better performance:
   height={800}
   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 />
-```
+\`\`\`
 
 ## Asset Structure
 
 Recommended organization on Cloudflare Pages:
 
-```
+\`\`\`
 /images/
   /services/
     crime-scene-hero.jpg
@@ -87,16 +87,16 @@ Recommended organization on Cloudflare Pages:
   /backgrounds/
     hero-bg.jpg
     texture.png
-```
+\`\`\`
 
 ## Deployment Workflow
 
 ### Upload New Images
 
 1. **Via Wrangler CLI:**
-   ```bash
+   \`\`\`bash
    npx wrangler pages deploy ./public/images --project-name=olimpias-ideogram-batch
-   ```
+   \`\`\`
 
 2. **Via Cloudflare Dashboard:**
    - Navigate to Pages project
@@ -122,24 +122,24 @@ After uploading new images:
 ### Lazy Loading
 Use lazy loading for below-the-fold images:
 
-```tsx
+\`\`\`tsx
 <Image
   src="..."
   alt="..."
   loading="lazy" // Default for images not marked priority
 />
-```
+\`\`\`
 
 ### Priority Images
 Mark above-the-fold images as priority:
 
-```tsx
+\`\`\`tsx
 <Image
   src="..."
   alt="..."
   priority // Loads immediately, no lazy loading
 />
-```
+\`\`\`
 
 ## Best Practices
 
@@ -158,10 +158,10 @@ Mark above-the-fold images as priority:
 - Keep under 125 characters
 
 Example:
-```
+\`\`\`
 Good: "Professional crime scene cleanup technician in protective gear"
 Bad: "Image of technician"
-```
+\`\`\`
 
 ### Accessibility
 - All images must have alt text

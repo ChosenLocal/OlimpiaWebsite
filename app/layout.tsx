@@ -1,44 +1,76 @@
-import type { Metadata } from 'next'
-import { Inter, Poppins } from 'next/font/google'
-import '@/styles/globals.css'
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter, Poppins } from "next/font/google"
+import "./globals.css"
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-body',
-  display: 'swap',
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
 })
 
 const poppins = Poppins({
-  weight: ['600', '700'],
-  subsets: ['latin'],
-  variable: '--font-heading',
-  display: 'swap',
+  weight: ["600", "700"],
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.olimpiasbiohazard.com'),
+  metadataBase: new URL('https://olimpiasbiohazard.com'),
   title: {
-    default: 'Olimpia\'s Biohazard & Restoration | 24/7 Emergency Cleanup Portland',
-    template: '%s | Olimpia\'s Biohazard'
+    default: "Olimpia's Biohazard & Restoration | 24/7 Emergency Cleanup Portland",
+    template: "%s | Olimpia's Biohazard",
   },
-  description: 'Professional biohazard cleanup, crime scene cleanup, and restoration services in Portland Metro. 24/7 emergency response. Discreet, compassionate service.',
-  keywords: ['biohazard cleanup', 'crime scene cleanup', 'Portland restoration', 'emergency cleanup', 'unattended death cleanup'],
+  description:
+    "Professional biohazard cleanup, crime scene cleanup, and restoration services in Portland Metro. 24/7 emergency response. Discreet, compassionate service.",
+  keywords: [
+    "biohazard cleanup",
+    "crime scene cleanup",
+    "Portland restoration",
+    "emergency cleanup",
+    "unattended death cleanup",
+  ],
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://www.olimpiasbiohazard.com',
-    siteName: 'Olimpia\'s Biohazard & Restoration',
+    type: "website",
+    locale: "en_US",
+    siteName: "Olimpia's Biohazard & Restoration",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 1200,
+        alt: "Olimpia's Biohazard & Restoration Logo",
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
+    title: "Olimpia's Biohazard & Restoration | 24/7 Emergency Cleanup Portland",
+    description: "Professional biohazard cleanup, crime scene cleanup, and restoration services in Portland Metro. 24/7 emergency response.",
+    images: ["/logo.png"],
   },
-  verification: {
-    google: 'TBD', // Add Google Search Console verification
-  },
+  generator: 'v0.app',
   robots: {
     index: true,
     follow: true,
-  }
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({

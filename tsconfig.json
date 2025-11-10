@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
+    "target": "ES6",
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -20,33 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
-      "@/components/*": ["./components/*"],
-      "@/lib/*": ["./lib/*"],
-      "@/styles/*": ["./styles/*"],
-      "@/sanity/*": ["./sanity/*"]
+      "@/*": ["./*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": [
-    "node_modules",
-    "01-PRD",
-    "02-IA-Sitemap",
-    "03-UX",
-    "04-Content",
-    "05-Design",
-    "06-SEO-AEO-GEO",
-    "07-Tech",
-    "08-APIs",
-    "09-CMS",
-    "10-Analytics",
-    "11-Testing-QA",
-    "12-Launch",
-    "13-Post-Launch",
-    "14-Legal",
-    "15-Programmatic-SEO",
-    "16-Phase2-Portal",
-    "17-i18n",
-    "18-DevOps"
-  ]
+  "exclude": ["node_modules"]
 }

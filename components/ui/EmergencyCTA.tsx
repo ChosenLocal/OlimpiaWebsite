@@ -1,49 +1,55 @@
-'use client'
-
-import React from 'react'
-import { Button } from './Button'
-import { cn } from '@/lib/utils'
-import { formatPhone } from '@/lib/utils'
+"use client"
+import { Button } from "./Button"
+import { cn } from "@/lib/utils"
+import { formatPhone } from "@/lib/utils"
+import { BUSINESS_PHONE } from "@/constants"
 
 export interface EmergencyCTAProps {
-  phone: string
-  locale?: 'en' | 'es'
+  phone?: string
+  text?: string
+  locale?: "en" | "es"
   className?: string
-  position?: 'fixed' | 'static'
+  position?: "fixed" | "static"
 }
 
-export function EmergencyCTA({
-  phone,
-  locale = 'en',
+const EmergencyCTA = ({
+  phone = BUSINESS_PHONE,
+  text = "Call Now",
+  locale = "en",
   className,
-  position = 'static'
-}: EmergencyCTAProps) {
-  const text = locale === 'en' ? 'Call Now' : 'Llamar Ahora'
+  position = "static",
+}: EmergencyCTAProps) => {
   const displayPhone = formatPhone(phone)
 
   return (
     <div
       className={cn(
-        'bg-charcoal border-2 border-fire rounded-lg p-4 shadow-xl',
-        position === 'fixed' && 'fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:max-w-sm z-40',
-        className
+        "bg-fire text-white py-3 px-4 flex items-center justify-between gap-4 rounded-lg shadow-lg",
+        position === "fixed" && "fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:max-w-sm z-40",
+        className,
       )}
     >
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex items-center gap-3">
+        <div className="text-2xl">🚨</div>
         <div>
-          <p className="text-sm text-gray-300 mb-1">
-            {locale === 'en' ? '24/7 Emergency Response' : 'Respuesta de Emergencia 24/7'}
+          <p className="text-sm font-semibold">
+            {locale === "en" ? "24/7 Emergency Service" : "Servicio de Emergencia 24/7"}
           </p>
-          <p className="text-lg font-heading font-semibold text-white">
-            {displayPhone}
+          <p className="text-xs opacity-90">
+            {locale === "en"
+              ? "Immediate response • Professional team • Discreet service"
+              : "Respuesta inmediata • Equipo profesional • Servicio discreto"}
           </p>
         </div>
-        <Button variant="emergency" size="md" asChild>
-          <a href={`tel:${phone}`} className="whitespace-nowrap">
-            {text}
-          </a>
-        </Button>
       </div>
+      <Button variant="emergency" size="md" asChild>
+        <a href={`tel:${phone}`} className="whitespace-nowrap" style={{ color: "#0d0d0d" }}>
+          {text}
+        </a>
+      </Button>
     </div>
   )
 }
+
+export { EmergencyCTA }
+export default EmergencyCTA as typeof EmergencyCTA

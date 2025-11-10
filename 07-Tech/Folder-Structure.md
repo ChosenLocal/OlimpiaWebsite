@@ -1,6 +1,6 @@
 # Repo/Folders
 
-```
+\`\`\`
 /app
   /(en)/page.tsx
   /(es)/page.tsx
@@ -21,4 +21,4 @@
 /styles
   tokens.css globals.css
 /tests
-```
+\`\`\`

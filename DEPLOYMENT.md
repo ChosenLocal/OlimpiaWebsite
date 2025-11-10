@@ -28,11 +28,11 @@ Before deploying, ensure you have:
 ### Option 1: Deploy via GitHub (Recommended)
 
 1. **Connect Repository to Vercel**
-   ```bash
+   \`\`\`bash
    # Visit https://vercel.com/new
    # Import your GitHub repository
    # Select: olimpia-website
-   ```
+   \`\`\`
 
 2. **Configure Project Settings**
    - Framework Preset: **Next.js**
@@ -50,7 +50,7 @@ Before deploying, ensure you have:
 
 ### Option 2: Deploy via Vercel CLI
 
-```bash
+\`\`\`bash
 # Install Vercel CLI
 npm i -g vercel
 
@@ -62,7 +62,7 @@ vercel
 
 # Deploy to production
 vercel --prod
-```
+\`\`\`
 
 ### Deployment Configuration (`vercel.json`)
 
@@ -80,7 +80,7 @@ The project includes a `vercel.json` with:
 
 Add these in Vercel Dashboard → Project → Settings → Environment Variables:
 
-```bash
+\`\`\`bash
 # Sanity CMS
 NEXT_PUBLIC_SANITY_PROJECT_ID=7phj7yjk
 NEXT_PUBLIC_SANITY_DATASET=production
@@ -92,11 +92,11 @@ NEXT_PUBLIC_BASE_URL=https://www.olimpiasbiohazard.com
 
 # Business Contact
 BUSINESS_PHONE=+15035551234
-```
+\`\`\`
 
 ### Optional (Add Later)
 
-```bash
+\`\`\`bash
 # Twilio (for callback feature)
 TWILIO_ACCOUNT_SID=<your_sid>
 TWILIO_AUTH_TOKEN=<your_token>
@@ -116,7 +116,7 @@ NOTIFICATION_EMAIL=info@olimpiasbiohazard.com
 # Analytics (optional)
 NEXT_PUBLIC_PLAUSIBLE_DOMAIN=olimpiasbiohazard.com
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
-```
+\`\`\`
 
 ### Getting Environment Variable Values
 
@@ -141,19 +141,19 @@ NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 
 ### 1. Deploy Sanity Studio
 
-```bash
+\`\`\`bash
 cd /path/to/project
 npm run sanity:deploy
-```
+\`\`\`
 
 This deploys Sanity Studio to: `https://7phj7yjk.sanity.studio`
 
 ### 2. Import Seed Data
 
-```bash
+\`\`\`bash
 # Make sure SANITY_API_TOKEN is in .env.local
 npm run sanity:import
-```
+\`\`\`
 
 This creates:
 - 6 services (EN)
@@ -180,30 +180,30 @@ In Sanity Dashboard → Team, invite:
 
 ### 1. Add Domain to Vercel
 
-```bash
+\`\`\`bash
 # Via Vercel Dashboard
 1. Go to Project → Settings → Domains
 2. Add domain: olimpiasbiohazard.com
 3. Add domain: www.olimpiasbiohazard.com
-```
+\`\`\`
 
 ### 2. Configure DNS
 
 In your DNS provider (e.g., Namecheap, GoDaddy, Cloudflare):
 
 **A Records:**
-```
+\`\`\`
 Host: @
 Type: A
 Value: 76.76.21.21
-```
+\`\`\`
 
 **CNAME Records:**
-```
+\`\`\`
 Host: www
 Type: CNAME
 Value: cname.vercel-dns.com
-```
+\`\`\`
 
 **Wait for DNS propagation** (can take 24-48 hours)
 
@@ -264,7 +264,7 @@ In Vercel → Project → Settings → Domains:
 - Geographic distribution
 
 **Google Lighthouse CI:**
-```bash
+\`\`\`bash
 # Run locally
 npx lighthouse https://www.olimpiasbiohazard.com --view
 
@@ -273,7 +273,7 @@ npx lighthouse https://www.olimpiasbiohazard.com --view
 - Accessibility: > 95
 - Best Practices: > 95
 - SEO: > 95
-```
+\`\`\`
 
 **PageSpeed Insights:**
 - Run monthly: https://pagespeed.web.dev
@@ -287,10 +287,10 @@ npx lighthouse https://www.olimpiasbiohazard.com --view
 - Set up Slack/email alerts
 
 **Sentry (Optional):**
-```bash
+\`\`\`bash
 npm install @sentry/nextjs
 # Configure in next.config.js
-```
+\`\`\`
 
 ### Uptime Monitoring
 
@@ -345,7 +345,7 @@ Monitor:
 ### Build Failures
 
 **Issue:** Build fails with TypeScript errors
-```bash
+\`\`\`bash
 # Solution: Check types locally
 npm run type-check
 
@@ -353,49 +353,49 @@ npm run type-check
 - Update @types packages
 - Check for any/unknown usage
 - Verify all imports
-```
+\`\`\`
 
 **Issue:** Build fails with missing environment variables
-```bash
+\`\`\`bash
 # Solution: Add to Vercel dashboard
 # All NEXT_PUBLIC_* vars must be set
-```
+\`\`\`
 
 ### Runtime Errors
 
 **Issue:** 500 errors on API routes
-```bash
+\`\`\`bash
 # Check Vercel logs
 # Common causes:
 - Missing SANITY_API_TOKEN
 - Invalid Twilio credentials
 - Rate limiting
-```
+\`\`\`
 
 **Issue:** Images not loading
-```bash
+\`\`\`bash
 # Verify Cloudflare Pages URLs in next.config.js
 # Check remotePatterns configuration
-```
+\`\`\`
 
 ### Performance Issues
 
 **Issue:** Slow page loads
-```bash
+\`\`\`bash
 # Check:
 - Image optimization (AVIF/WebP)
 - Bundle size (next build --analyze)
 - Database queries (Sanity)
 - Third-party scripts
-```
+\`\`\`
 
 **Issue:** High CLS (Cumulative Layout Shift)
-```bash
+\`\`\`bash
 # Solutions:
 - Add image dimensions
 - Reserve space for dynamic content
 - Use font-display: optional
-```
+\`\`\`
 
 ## Rollback Procedure
 
@@ -410,7 +410,7 @@ If deployment fails or causes issues:
 
 ### Full Rollback (Git)
 
-```bash
+\`\`\`bash
 # Revert to previous commit
 git revert HEAD
 git push origin main
@@ -420,7 +420,7 @@ git reset --hard <commit-hash>
 git push origin main --force
 
 # Vercel will auto-deploy the reverted code
-```
+\`\`\`
 
 ## Support Contacts
 

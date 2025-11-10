@@ -25,30 +25,30 @@ Professional, bilingual (EN/ES) emergency response website for biohazard cleanup
 
 1. Clone the repository
 2. Install dependencies:
-```bash
+\`\`\`bash
 npm install
-```
+\`\`\`
 
 3. Copy `.env.example` to `.env.local` and configure your environment variables:
-```bash
+\`\`\`bash
 cp .env.example .env.local
-```
+\`\`\`
 
 4. Update the environment variables with your actual credentials
 
 ### Development
 
 Run the development server:
-```bash
+\`\`\`bash
 npm run dev
-```
+\`\`\`
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
 
 Run Sanity Studio (CMS):
-```bash
+\`\`\`bash
 npm run sanity
-```
+\`\`\`
 
 Open [http://localhost:3000/studio](http://localhost:3000/studio) to access the CMS.
 
@@ -66,7 +66,7 @@ Open [http://localhost:3000/studio](http://localhost:3000/studio) to access the 
 
 ## Project Structure
 
-```
+\`\`\`
 /app                    # Next.js App Router
   /(en)                 # English routes
   /(es)                 # Spanish routes
@@ -86,7 +86,7 @@ Open [http://localhost:3000/studio](http://localhost:3000/studio) to access the 
 /public                # Static assets
 /styles                # Global styles
 /tests                 # Playwright tests
-```
+\`\`\`
 
 ## Key Features
 

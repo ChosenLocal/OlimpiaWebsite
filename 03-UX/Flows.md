@@ -1,7 +1,7 @@
 # UX Flows
 
 ## Emergency Flow (Chat → Call Bridge)
-```mermaid
+\`\`\`mermaid
 flowchart TD
   A[Landing on any page] --> B{Emergency?}
   B -- Yes --> C[Sticky CTA: Call Now / Call Me Now]
@@ -13,17 +13,17 @@ flowchart TD
   H --> I[SMS confirmation + ETA + tech name]
   B -- No --> J[Read service info / FAQ]
   J --> K[Request estimate or schedule window]
-```
+\`\`\`
 
 ## Non‑Emergency Lead Flow
-```mermaid
+\`\`\`mermaid
 flowchart TD
   L[Service Page] --> M[Process & Trust blocks]
   M --> N[FAQ / Guides]
   N --> O[Form submit]
   O --> P[CRM + Email + Slack alert]
   P --> Q[Follow-up call within time window]
-```
+\`\`\`
 
 ## Spanish Parity Flow
 - Language toggle persists locale across routes.

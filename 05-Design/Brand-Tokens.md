@@ -17,7 +17,7 @@ Derived from provided logo (gold crown & shield on black; biohazard green, fire 
 - Fallbacks: system-ui, -apple-system, Segoe UI, Roboto
 
 ## CSS Variables (tokens.css)
-```css
+\`\`\`css
 :root {
   --color-gold: #F0C24B;
   --color-black: #0D0D0D;
@@ -36,10 +36,10 @@ Derived from provided logo (gold crown & shield on black; biohazard green, fire 
   --space-3: 12px;
   --space-4: 16px;
 }
-```
+\`\`\`
 
 ## Tailwind Theme Snippet
-```js
+\`\`\`js
 // tailwind.config.js (excerpt)
 module.exports = {
   theme: {
@@ -58,4 +58,4 @@ module.exports = {
     }
   }
 }
-```
+\`\`\`

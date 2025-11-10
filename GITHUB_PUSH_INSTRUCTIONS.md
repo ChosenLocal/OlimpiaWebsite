@@ -13,7 +13,7 @@
 
 Run this in your terminal:
 
-```bash
+\`\`\`bash
 cd "/home/jack-leszczynski/Desktop/ChosenLocal/Projects/Client Projects/Olimpia/OlimpiaWebsite"
 
 # Authenticate with GitHub CLI (you'll use your browser)
@@ -21,7 +21,7 @@ gh auth login -h github.com
 
 # Push all commits
 git push -u origin main
-```
+\`\`\`
 
 When prompted:
 1. Choose "GitHub.com"
@@ -48,12 +48,12 @@ If you prefer using a token:
 
 ### Step 2: Push with Token
 
-```bash
+\`\`\`bash
 cd "/home/jack-leszczynski/Desktop/ChosenLocal/Projects/Client Projects/Olimpia/OlimpiaWebsite"
 
 # Push using token (replace YOUR_TOKEN with actual token)
 git push https://YOUR_TOKEN@github.com/JackL725/olimpia-website.git main
-```
+\`\`\`
 
 ---
 
@@ -98,22 +98,22 @@ Once you've successfully pushed, you can:
 
 ### "Repository not found" error?
 The repository needs to exist on GitHub first:
-```bash
+\`\`\`bash
 gh repo create olimpia-website --public --source=. --remote=origin
-```
+\`\`\`
 
 ### Still getting permission errors?
 Make sure you're authenticated as JackL725:
-```bash
+\`\`\`bash
 gh auth status
 # Should show: Logged in to github.com as JackL725
-```
+\`\`\`
 
 ### Want to restore SSH pushing for other projects?
 After pushing this project, restore your SSH config:
-```bash
+\`\`\`bash
 git config --global url.ssh://git@github.com/.insteadOf https://github.com/
-```
+\`\`\`
 
 ---
 
