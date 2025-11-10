@@ -148,7 +148,7 @@ export default function BiohazardRemediationPage() {
                   <strong className="text-white">OSHA Compliance:</strong> Our teams operate under documented
                   exposure-control plans aligned with OSHA&apos;s Bloodborne Pathogens Standard.{" "}
                   <Link href="/safety-compliance" className="text-gold hover:text-gold/80 underline">
-                    Learn more about our safety protocols
+                    View detailed OSHA Bloodborne Pathogen compliance documentation
                   </Link>
                   .
                 </p>

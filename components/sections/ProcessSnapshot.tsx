@@ -85,7 +85,7 @@ export function ProcessSnapshot({ locale = "en" }: ProcessSnapshotProps) {
             href="/about"
             className="text-water hover:text-gold transition-colors font-medium inline-flex items-center gap-2"
           >
-            {locale === "en" ? "See the full process" : "Ver el proceso completo"}
+            {locale === "en" ? "Learn about our complete 3-step cleanup process" : "Conozca nuestro proceso completo de limpieza en 3 pasos"}
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>

@@ -313,7 +313,7 @@ export default function HomePage() {
               <p className="text-sm text-gray-400">
                 Safety & compliance aligned to OSHA&apos;s Bloodborne Pathogens Standard and Oregon infectious-waste rules.{" "}
                 <Link href="/safety-compliance" className="text-gold hover:text-gold/80 underline">
-                  See our Safety & Compliance page
+                  Review our OSHA compliance and safety standards
                 </Link>
                 .
               </p>

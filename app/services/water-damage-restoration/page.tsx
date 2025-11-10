@@ -200,7 +200,7 @@ export default function WaterDamageRestorationPage() {
                   Vancouver, WA, and nearby communities.
                 </p>
                 <Link href="/service-areas" className="text-gold hover:text-gold/80 underline">
-                  View all service areas
+                  Explore all Portland-metro water damage service areas
                 </Link>
               </div>
 

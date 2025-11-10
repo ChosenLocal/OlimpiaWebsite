@@ -210,7 +210,7 @@ export default function FireDamageRestorationPage() {
                   Vancouver, WA, and nearby communities.
                 </p>
                 <Link href="/service-areas" className="text-gold hover:text-gold/80 underline">
-                  View all service areas
+                  See all fire damage restoration service areas
                 </Link>
               </div>
 

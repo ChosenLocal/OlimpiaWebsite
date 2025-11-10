@@ -80,7 +80,7 @@ export function LocalProof({ locale = "en", averageResponseTime = 54 }: LocalPro
             href="/service-area"
             className="text-water hover:text-gold transition-colors font-medium inline-flex items-center gap-2"
           >
-            {locale === "en" ? "See all service areas" : "Ver todas las áreas de servicio"}
+            {locale === "en" ? "Browse all Portland-metro service locations" : "Explore todas las ubicaciones de servicio en el área metropolitana de Portland"}
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
