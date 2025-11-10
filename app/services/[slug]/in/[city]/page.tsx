@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: ServiceCityPageProps): Promis
     }
   }
 
-  const title = `${service.name} in ${city.name}, OR | 24/7 Emergency Response`
+  const title = `${service.name} ${city.name} | Olimpia's 24/7`
   const description = `Professional ${service.name} services in ${city.name}, Oregon. Certified technicians, rapid response, discreet service. Available 24/7. Call (503) 555-1234.`
 
   return {

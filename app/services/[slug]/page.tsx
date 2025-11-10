@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   }
 
   return {
-    title: `${service.title} — Portland Metro | Olimpia's Biohazard`,
+    title: `${service.title} Portland | Olimpia's`,
     description: service.summary,
     alternates: {
       canonical: `/services/${params.slug}`,

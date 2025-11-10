@@ -9,7 +9,7 @@ import { StructuredData } from "@/components/ui/StructuredData"
 import { generateHowToSchema } from "@/lib/seo-helpers"
 
 export const metadata: Metadata = {
-  title: "Crime Scene Cleanup – Portland, OR (24/7) | Olimpia's",
+  title: "Crime Scene Cleanup Portland | Olimpia's",
   description:
     "Discreet, OSHA-compliant crime & trauma cleanup in Portland. We coordinate with insurance and arrive fast.",
   alternates: {

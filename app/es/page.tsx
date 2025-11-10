@@ -11,7 +11,7 @@ import { StructuredData } from '@/components/ui/StructuredData'
 import { generateLocalBusinessSchema, generateFAQSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'Limpieza de Materiales Peligrosos y Escenas del Crimen — Portland Metro — 24/7',
+  title: "Limpieza Escenas del Crimen Portland | Olimpia's",
   description: 'Limpieza de emergencia 24/7 de materiales peligrosos y escenas del crimen en Portland Metro. Servicio discreto y profesional. Certificado por OSHA.',
   alternates: {
     canonical: '/es',

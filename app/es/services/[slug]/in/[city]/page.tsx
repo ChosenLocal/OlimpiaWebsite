@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: ServiceCityPageProps): Promis
     }
   }
 
-  const title = `${service.nameES} en ${city.name}, OR | Respuesta de Emergencia 24/7`
+  const title = `${service.nameES} ${city.name} | Olimpia's 24/7`
   const description = `Servicios profesionales de ${service.nameES} en ${city.name}, Oregon. Técnicos certificados, respuesta rápida, servicio discreto. Disponible 24/7. Llame al (503) 555-1234.`
 
   return {

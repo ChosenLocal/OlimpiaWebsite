@@ -19,8 +19,8 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.olimpiabiohazard.com'),
   title: {
-    default: "Olimpia's Biohazard & Restoration | 24/7 Emergency Cleanup Portland",
-    template: "%s | Olimpia's Biohazard",
+    default: "24/7 Biohazard Cleanup Portland | Olimpia's",
+    template: "%s | Olimpia's",
   },
   description:
     "Professional biohazard cleanup, crime scene cleanup, and restoration services in Portland Metro. 24/7 emergency response. Discreet, compassionate service.",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Olimpia's Biohazard & Restoration | 24/7 Emergency Cleanup Portland",
+    title: "24/7 Biohazard Cleanup Portland | Olimpia's",
     description: "Professional biohazard cleanup, crime scene cleanup, and restoration services in Portland Metro. 24/7 emergency response.",
     images: ["/logo.png"],
   },

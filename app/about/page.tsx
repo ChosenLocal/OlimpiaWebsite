@@ -9,7 +9,7 @@ import { generatePersonSchema, generateOrganizationSchema } from "@/lib/seo-help
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "About Olimpia's Biohazard & Restoration | Portland-Metro Biohazard & Crime Scene Cleanup",
+  title: "About Olimpia's | Portland Biohazard Cleanup",
   description:
     "Learn about founder Olimpia Ursu and our compassionate, discreet biohazard, crime scene, unattended death, hoarder, water, and fire cleanup across Portland-metro & Vancouver, WA.",
   alternates: {

@@ -14,14 +14,14 @@ import { Button } from "@/components/ui/Button"
 import { R2_IMAGES } from "@/lib/r2-images"
 
 export const metadata: Metadata = {
-  title: "Biohazard & Crime Scene Cleanup – Portland, OR | Olimpia's",
+  title: "Crime Scene Cleanup Portland 24/7 | Olimpia's",
   description:
     "24/7 biohazard, crime scene, water & fire restoration across Portland-metro. Discreet, insured, OSHA-compliant cleanup. Call now.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Biohazard & Crime Scene Cleanup – Portland, OR | Olimpia's",
+    title: "Crime Scene Cleanup Portland 24/7 | Olimpia's",
     description: "24/7 biohazard, crime scene, water & fire restoration across Portland-metro. Discreet, insured, OSHA-compliant cleanup.",
     url: "/",
     siteName: "Olimpia's Biohazard & Restoration",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Biohazard & Crime Scene Cleanup – Portland, OR | Olimpia's",
+    title: "Crime Scene Cleanup Portland 24/7 | Olimpia's",
     description: "24/7 biohazard, crime scene, water & fire restoration across Portland-metro. Discreet, insured, OSHA-compliant cleanup.",
     images: ["/logo.png"],
   },

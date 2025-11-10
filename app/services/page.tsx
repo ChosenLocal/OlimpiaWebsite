@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/Container"
 import { Button } from "@/components/ui/Button"
 
 export const metadata: Metadata = {
-  title: "Biohazard & Restoration Services | Olimpia's | Portland, OR",
+  title: "Biohazard Services Portland | Olimpia's",
   description:
     "Comprehensive biohazard cleanup, crime scene cleaning, water damage restoration, and fire damage services in Portland. 24/7 emergency response, OSHA compliant, discreet service.",
   openGraph: {
